@@ -1,0 +1,264 @@
+/* RESET */
+body {
+  margin: 0;
+  padding-top: 120px;
+  font-family: Arial, sans-serif;
+}
+
+section {
+  padding: 60px 0;
+}
+
+/* ================= HEADER ================= */
+.header-fixo {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1100;
+}
+
+/* FAIXA LOGO */
+.topo-logo {
+  background: #fff;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid #660000;
+}
+
+.topo-logo img {
+  height: 35px;
+}
+
+/* NAVBAR */
+.navbar-custom {
+  height: 60px;
+  background: rgb(102, 0, 0);
+}
+
+.logo-etec {
+  color: #ccc;
+}
+
+/* LINKS */
+.nav-link {
+  color: #fff !important;
+  margin: 0 10px;
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #fff;
+  transition: 0.3s;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* ================= HERO ================= */
+.hero {
+  height: 70vh;
+  background: linear-gradient(rgba(102,0,0,0.8), rgba(0,0,0,0.7)),
+              url('../imagens/imagem3.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+/* CURVA */
+.hero::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  width: 100%;
+  height: 100px;
+  background: white;
+  border-top-left-radius: 100% 50px;
+  border-top-right-radius: 100% 50px;
+}
+
+/* ================= TITULOS ================= */
+.titulo-secao {
+  font-size: 32px;
+  font-weight: bold;
+  color: #660000;
+  text-align: center;
+}
+
+.titulo-secao::after {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background: #660000;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* ================= CARDS ================= */
+.curso-card {
+  border-radius: 20px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  transition: 0.3s;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.curso-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.curso-card .p-3 {
+  flex-grow: 1;
+}
+
+.curso-card:hover {
+  transform: translateY(-10px);
+}
+
+/* TEXTO */
+.curso-titulo {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.curso-sub {
+  font-size: 13px;
+  color: #660000;
+  font-weight: 600;
+}
+
+.curso-desc {
+  font-size: 13px;
+  color: #555;
+}
+
+/* OVERLAY */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(102,0,0,0.9), rgba(0,0,0,0.2));
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 20px;
+  opacity: 0;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+.curso-card:hover .overlay {
+  opacity: 1;
+}
+
+/* ================= PARALLAX ================= */
+.parallax {
+  width: 100%;
+  min-height: 50vh;
+  background-image: url('../imagens/carrosel3.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.parallax::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+}
+
+.parallax .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* FUTURO CARDS */
+.futuro-card {
+ background:  #660000d0;
+  padding: 30px;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.futuro-card:hover {
+  transform: translateY(-10px) scale(1.03);
+}
+
+/* ================= ACCORDION ================= */
+#duvidas {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.accordion-item {
+  border: none;
+  margin-bottom: 15px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.accordion-button {
+  background: white;
+  font-weight: 600;
+  color: #333;
+  box-shadow: none;
+}
+
+.accordion-body {
+  font-size: 14px;
+  color: #555;
+  background: #fafafa;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+/* REMOVE AZUL BOOTSTRAP */
+.accordion-button:not(.collapsed) {
+  background-color: #660000;
+  color: white;
+}
+
+.accordion-button::after {
+  filter: brightness(0) invert(1);
+}
+
+/* ================= FOOTER ================= */
+.footer-custom {
+  width: 100%;
+  background: linear-gradient(135deg, #660000, #330000);
+  color: white;
+}
+
+.footer-link {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: white;
+}

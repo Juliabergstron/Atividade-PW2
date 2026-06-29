@@ -1,0 +1,129 @@
+body {
+  background-color: #f5f7fa; 
+  padding-top: 100px;
+}
+
+/* ================= HEADER ================= */
+.header-fixo {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1100;
+}
+
+/* FAIXA LOGO */
+.topo-logo {
+  background: #fff;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid #660000;
+}
+
+.topo-logo img {
+  height: 35px;
+}
+
+/* NAVBAR */
+.navbar-custom {
+  height: 60px;
+  background: rgb(102, 0, 0);
+}
+
+.logo-etec {
+  color: #ccc;
+}
+
+/* LINKS */
+.nav-link {
+  color: #fff !important;
+  margin: 0 10px;
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #fff;
+  transition: 0.3s;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* FORMULÁRIO */
+.form-custom {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* INPUTS */
+.form-control {
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  transition: 0.2s;
+}
+
+.form-control:focus {
+  border-color: #660000;
+  box-shadow: 0 0 0 2px rgba(102,0,0,0.1);
+}
+
+.btn-enviar {
+  background: linear-gradient(135deg, #660000, #990000);
+  color: #fff !important; 
+  border: none;
+  border-radius: 12px;
+  padding: 14px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  box-shadow: 0 8px 20px rgba(102, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+/* hover */
+.btn-enviar:hover {
+  color: #fff !important; /* 🔥 mantém branco */
+  background: linear-gradient(135deg, #990000, #cc0000);
+  transform: translateY(-3px);
+}
+
+.titulo-secao {
+  font-size: 32px;
+  font-weight: bold;
+  color: #660000;
+  text-align: center;
+}
+
+.titulo-secao::after {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background: #660000;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+/* FOOTER */
+.footer-custom {
+ background: linear-gradient(135deg, #660000, #330000);
+  color: white;
+}
+
+.footer-link {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: white;
+}

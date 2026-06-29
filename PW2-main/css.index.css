@@ -1,0 +1,354 @@
+body {
+  background-color: #f5f7fa; 
+  padding-top: 100px;
+}
+
+/* ================= HEADER ================= */
+.header-fixo {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1100;
+}
+
+/* FAIXA LOGO */
+.topo-logo {
+  background: #fff;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid #660000;
+}
+
+.topo-logo img {
+  height: 35px;
+}
+
+/* NAVBAR */
+.navbar-custom {
+  height: 60px;
+  background: rgb(102, 0, 0);
+}
+
+.logo-etec {
+  color: #ccc;
+}
+
+/* LINKS */
+.nav-link {
+  color: #fff !important;
+  margin: 0 10px;
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #fff;
+  transition: 0.3s;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+/* CARROSSEL*/
+
+.carousel-item {
+  height: 450px;
+  position: relative;
+}
+
+.carousel-item img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Overlay escuro */
+.carousel-item::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+}
+
+/* Texto */
+.carousel-caption {
+  z-index: 2;
+}
+
+.carousel-caption h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.carousel-caption p {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+/* Botão */
+.carousel-caption .btn {
+  width: fit-content;
+}
+/* TÍTULOS */
+h1, h2 {
+  color: #660000;
+  font-weight: bold;
+}
+
+/* SECTIONS */
+
+section:first-of-type {
+  padding-top: 0;
+}
+/* SECTION SOBRE */
+.sobre-section {
+  background: linear-gradient(135deg, #ffffff, #f0f2f5);
+  padding: 80px 0;
+}
+
+/* TÍTULO */
+.titulo-destaque {
+  font-size: 36px;
+  color: #660000;
+  font-weight: bold;
+}
+
+/* LINHA DECORATIVA */
+.linha {
+  width: 80px;
+  height: 4px;
+  background-color: #660000;
+  margin: 15px auto 25px;
+  border-radius: 10px;
+}
+
+/* TEXTO */
+.texto-sobre {
+  max-width: 900px;
+  margin: auto;
+  font-size: 18px;
+  color: #555;
+  line-height: 1.6;
+}
+.card:hover {
+  transform: scale(1.02);
+  transition: 0.3s;
+}
+
+/* SECTION */
+.diferencial-section {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #f8f9fc, #eef1f5);
+}
+
+/* TÍTULO */
+.titulo-diferencial {
+  color: #660000;
+  font-weight: bold;
+}
+
+/* LINHA CENTRAL */
+.linha-centro {
+  width: 70px;
+  height: 4px;
+  background-color: #660000;
+  margin: 10px auto 30px;
+  border-radius: 10px;
+}
+
+/* SECTION */
+.diferencial-section {
+  padding: 20px 0;
+  background-color: #f8f9fc;
+}
+
+/* TÍTULO */
+.titulo-diferencial {
+  color: #660000;
+  font-weight: bold;
+  font-size: 32px;
+}
+
+/* CARD */
+.minimal-card {
+  border: none;
+  border-radius: 20px;
+  padding: 40px 25px;
+  background: #fff;
+  position: relative;
+  overflow: hidden;
+  transition: 0.4s;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+  cursor: pointer;
+}
+
+/* NÚMERO GRANDE (ESTILO JOVEM) */
+.numero {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 60px;
+  font-weight: bold;
+  color: rgba(102, 0, 0, 0.08);
+}
+
+/* TEXTO */
+.minimal-card h5 {
+  color: #660000;
+  font-weight: bold;
+}
+
+.minimal-card p {
+  color: #555;
+  font-size: 15px;
+}
+
+/* LINHA ANIMADA */
+.minimal-card::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 4px;
+  background-color: #660000;
+  transition: 0.4s;
+}
+
+/* HOVER EFEITO */
+.minimal-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+}
+
+.minimal-card:hover::before {
+  width: 100%;
+}
+
+
+/* OVERLAY ESCURO */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(102,0,0,0.9), transparent);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
+  transition: 0.4s;
+}
+
+/* TEXTO */
+.overlay h5 {
+  color: #fff;
+  font-weight: bold;
+}
+
+.overlay p {
+  color: #eee;
+  font-size: 14px;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: 0.4s;
+}
+
+
+/* SECTION */
+.noticias-section {
+  padding: 100px 0;
+  background: #f8f9fc;
+}
+
+/* TÍTULO */
+.titulo-noticias {
+  color: #660000;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* CARD */
+.noticia-card {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  height: 200px;
+  transition: 0.4s;
+}
+
+/* CARD GRANDE */
+.noticia-card.grande {
+  height: 100%;
+  min-height: 420px;
+}
+
+/* IMAGEM */
+.noticia-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+/* OVERLAY MODERNO */
+.noticia-card .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background: linear-gradient(to top, rgba(102,0,0,0.9), transparent);
+  color: #fff;
+}
+
+/* TEXTO */
+.overlay h5,
+.overlay h6 {
+  font-weight: bold;
+}
+
+.overlay p {
+  font-size: 14px;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: 0.4s;
+}
+
+/* HOVER */
+.noticia-card:hover img {
+  transform: scale(1.08);
+}
+
+.noticia-card:hover .overlay p {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* LEVE ELEVAÇÃO */
+.noticia-card:hover {
+  transform: translateY(-5px);
+}
+/* FOOTER */
+.footer-custom {
+ background: linear-gradient(135deg, #660000, #330000);
+  color: white;
+}
+
+.footer-link {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: white;
+}

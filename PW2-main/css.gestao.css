@@ -1,0 +1,258 @@
+body {
+  background-color: #f5f7fa; 
+  padding-top: 100px;
+}
+
+/* ESPAÇAMENTO ENTRE SEÇÕES */
+section {
+  margin-bottom: 80px;
+}
+
+/* ================= HEADER ================= */
+.header-fixo {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1100;
+}
+
+/* LOGO */
+.topo-logo {
+  background: #fff;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid #660000;
+}
+
+.topo-logo img {
+  height: 35px;
+}
+
+/* NAVBAR */
+.navbar-custom {
+  height: 60px;
+  background: rgb(102, 0, 0);
+}
+
+.logo-etec {
+  color: #ccc;
+}
+
+/* LINKS */
+.nav-link {
+  color: #fff !important;
+  margin: 0 10px;
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #fff;
+  transition: 0.3s;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* HERO */
+.hero {
+  height: 70vh;
+  background: linear-gradient(rgba(102,0,0,0.8), rgba(0,0,0,0.7)),
+              url('../imagens/gestao.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+/* CURVA */
+.hero::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  width: 100%;
+  height: 100px;
+  background: white;
+  border-top-left-radius: 100% 50px;
+  border-top-right-radius: 100% 50px;
+}
+
+/* TÍTULOS */
+.titulo-secao {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #660000;
+  font-weight: bold;
+}
+
+.titulo-secao::after {
+  content: "";
+  width: 60px;
+  height: 3px;
+  background: #660000;
+  display: block;
+  margin: 10px auto;
+}
+
+/* MISSÃO VISÃO VALORES */
+.mvv {
+  max-width: 1000px; 
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.titulo-secao2 {
+  text-align: left;
+  margin-bottom: 30px;
+  color: #660000;
+  font-weight: bold;
+}
+
+.bloco-mvv {
+  background: white;
+  padding: 25px;
+  border-left: 5px solid #660000;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+/* EQUIPE */
+.equipe {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.membro img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.membro h6 {
+  margin-top: 12px;
+  font-weight: bold;
+}
+
+.membro p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* CALENDÁRIO NOVO */
+.calendario-tabela {
+  max-width: 700px;
+  margin: auto;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.calendario-tabela table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.calendario-tabela th {
+  background: #660000;
+  color: white;
+  padding: 12px;
+  text-align: left;
+}
+
+.calendario-tabela td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.calendario-tabela tr:hover {
+  background: #f9f9f9;
+}
+
+/* NOTÍCIAS */
+.card-noticia {
+  background: white;
+  padding: 30px;
+  border-radius: 18px;
+  position: relative;
+  transition: 0.3s;
+  border-top: 6px solid #660000; /* mais destaque */
+  height: 100%;
+
+  /* MAIS DESTAQUE */
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+/* efeito hover mais forte */
+.card-noticia:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 20px 45px rgba(0,0,0,0.25);
+}
+
+/* título maior */
+.card-noticia h5 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* texto mais visível */
+.card-noticia p {
+  font-size: 15px;
+  color: #444;
+}
+
+/* TAG */
+
+.tag {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 6px 14px;
+  background: #660000;
+  color: white;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: bold;
+}
+/* CARD GESTÃO FINAL */
+.card-gestao-simples {
+  background: #f1f1f1;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 60px auto 0; /* MAIS ESPAÇO */
+  text-align: center;
+}
+
+/* FOOTER */
+.footer-custom {
+ background: linear-gradient(135deg, #660000, #330000);
+  color: white;
+}
+
+.footer-link {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: white;
+}
